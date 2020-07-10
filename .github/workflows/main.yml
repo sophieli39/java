@@ -18,3 +18,8 @@ jobs:
 
     - name: Build project with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Run
+      run: |
+       cd ./src/main
+       java App.java
