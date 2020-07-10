@@ -21,6 +21,4 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Run
-      run: |
-       cd ./src/main
-       java App.java
+      run: mvn verify
